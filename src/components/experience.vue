@@ -5,16 +5,17 @@
         <div class="col-md-7 offset-md-2">
           <ul class="timeline">
             <li v-for="data in content.experience_list" v-bind:key="data.id">
-              <a
-                class="org"
-                target="_blank"
-                href="https://www.facebook.com/humans.of.skule/"
+              <a class="org" target="_blank" href="data.link"
                 >{{ data.org }}
               </a>
               <p class="float-right date">{{ data.date }}</p>
               <p class="position">{{ data.position }}</p>
-              <p class="description">
-                {{ data.description }}
+              <p
+                class="description"
+                v-for="des in data.description"
+                v-bind:key="des"
+              >
+                {{ des }}
               </p>
               <span
                 class="badge badge-light"
@@ -22,6 +23,7 @@
                 v-bind:key="label"
                 >{{ label }}</span
               >
+              <br />
             </li>
           </ul>
         </div>
@@ -43,8 +45,9 @@ export default {
             link: "https://www.facebook.com/humans.of.skule/",
             position: "Head of Photography",
             date: "Sept. 2020 - current",
-            description:
+            description: [
               "Responsible for interviewing candidates, organize photography team meeting.",
+            ],
             tag: ["Communication", "Leadership"],
           },
           {
@@ -53,8 +56,10 @@ export default {
             link: "https://www.rbccm.com/en/expertise/electronic-trading.page",
             position: "Technical Systems Analyst Intern",
             date: "May 2019 - Sept. 2020",
-            description:
-              "Automated testing for platforms within electronic trading stack.",
+            description: [
+              "Provided automation expertise for multiple applications in the electronic trading stack.",
+              "Designed and developed testing framework for algorithmic trading platforms resulting in increase of reliability.",
+            ],
             tag: ["Java", "Cucumber", "Selenium", "MongoDB"],
           },
 
@@ -64,8 +69,10 @@ export default {
             link: "https://www.svw-volkswagen.com/",
             position: "Electronic Purchasing Division Summer Intern",
             date: "July 2018 - Aug. 2018",
-            description:
+            description: [
               "Translated automobile entertaining system and smart home technology contracts.",
+              "Researched and analyzed automobile chip industry and identified potential supplier."
+            ],
             tag: ["Microsoft Office"],
           },
           {
@@ -83,7 +90,7 @@ export default {
             link: "http://reltoronto.ca/",
             position: "Summer Research Student",
             date: "May 2017 - Aug. 2017",
-            description: "Human posture data analysis.",
+            description: ["Analyzed and investigated dynamic balance of elderly people utilizing statistic knowledge and Matlab."],
             tag: ["Matlab"],
           },
           {
@@ -92,7 +99,7 @@ export default {
             link: "https://www.utat.ca/",
             position: "Unmanned Aerial Vehicle Avionic Team Memeber",
             date: "Sept. 2016 - April 2017",
-            description: "Vehicle failsafe testing with Autopilot.",
+            description: ["Vehicle failsafe testing with Autopilot."],
             tag: [],
           },
         ],
@@ -101,10 +108,10 @@ export default {
   },
   methods: {
     initialization() {
-      var org_list = document.getElementsByClassName("org");
-      for (var i = 0; i < org_list.length; i++) {
-        org_list[i].href = this.content.experience_list[i].link;
-      }
+      // var org_list = document.getElementsByClassName("org");
+      // for (var i = 0; i < org_list.length; i++) {
+      //   org_list[i].href = this.content.experience_list[i].link;
+      // }
     },
   },
   mounted() {

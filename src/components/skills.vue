@@ -2,7 +2,7 @@
   <main class="px-3">
     <div class="modal-body row">
       <div class="col-md-6">
-        <h5 class="skill-type">Programming Languages</h5>
+        <h5 class="skill-type font-weight-light">Programming Languages</h5>
         <br />
         <!-- first column -->
         <div v-for="data in content.prog_lan_list" v-bind:key="data.id">
@@ -17,7 +17,7 @@
         <br />
       </div>
       <div class="col-md-6">
-        <h5 class="skill-type">Others</h5>
+        <h5 class="skill-type font-weight-light">Others</h5>
         <br />
         <!-- second column -->
         <div v-for="data in content.other_list" v-bind:key="data.id">
@@ -77,6 +77,12 @@ export default {
             percentage: 25,
             level: "basic",
           },
+            {
+            id: 6,
+            skill: "Solidity",
+            percentage: 25,
+            level: "basic",
+          },
         ],
         other_list: [
           {
@@ -94,6 +100,12 @@ export default {
           {
             id: 2,
             skill: "Machine Learning",
+            percentage: 75,
+            level: "intermediate",
+          },
+              {
+            id: 3,
+            skill: "git",
             percentage: 75,
             level: "intermediate",
           },

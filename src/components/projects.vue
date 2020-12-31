@@ -1,27 +1,30 @@
 <template>
   <main class="px-3">
     <!-- Page Content -->
-    <div
-      class="container"
-      v-for="data in content.project_list"
-      v-bind:key="data.id"
-    >
-      <div class="row">
-        <div class="col-lg-6 mb-4">
+    <div class="container">
+      <div class="row font-weight-light">
+        <div
+          class="col-lg-5 mb-4"
+          v-for="data in content.project_list"
+          v-bind:key="data.id"
+        >
           <div class="card h-100">
-            <a href="#"
-              ><img
+           
+              <!-- <img
                 class="card-img-top"
                 src="require('../assets/' + data.img + 'png')"
                 alt="pic"
-            /></a>
+            /> -->
+              <img :src="require('./../assets/' + data.img + '.png')" />
+         
             <div class="card-body">
-              <h4 class="card-title">
+              <h4 class="card-title text-muted font-weight-light">
                 <a href="#">{{ data.project_name }}</a>
               </h4>
               <p class="date">{{ data.date }}</p>
-              <p class="card-text">
-                {{ data.description }}
+              <p class="card-text" v-for="des in data.description"
+                v-bind:key="des">
+                {{ des }}
               </p>
               <span
                 class="badge badge-light"
@@ -32,90 +35,10 @@
             </div>
           </div>
         </div>
-        <!-- <div class="col-lg-6 mb-4">
-      <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Project Two</a>
-          </h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
-        </div>
       </div>
     </div>
-    <div class="col-lg-6 mb-4">
-      <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Project Three</a>
-          </h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 mb-4">
-      <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Project Four</a>
-          </h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 mb-4">
-      <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Project Five</a>
-          </h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 mb-4">
-      <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Project Six</a>
-          </h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
-        </div>
-      </div>
-    </div> -->
-      </div>
-      <!-- /.row -->
 
-      <!-- Pagination -->
-      <!-- <ul class="pagination justify-content-center">
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">1</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">2</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">3</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-    </li>
-  </ul> -->
-    </div>
-    <!-- /.container -->
+  
   </main>
 </template>
 
@@ -130,11 +53,59 @@ export default {
             id: 0,
             img: "evoting",
             project_name: "Blockchain E-Voting",
-            link: "https://www.facebook.com/humans.of.skule/",
-            date: "Sept. 2020 - current",
+            link: "#",
+            date: "September 2020 - current",
             description:
-              "A decentralized single transferable voting system in which users’ ranked ballots are recorded in a blockchain (ethereum).",
+              ["A decentralized single transferable voting system in which users’ ranked ballots are recorded in a blockchain (ethereum).",
+              "Develop a voting mechanism to ensure cast as intended and recorded as casted functionalities.",
+              "Implement encryption algorithm to protect voter privacy and voting results."],
             tag: ["Python", "Javascript", "Vue", "Solidity"],
+          },
+          {
+            id: 1,
+            img: "aps360",
+            project_name: "America Sign Language Recognition",
+            link: "#",
+            date: "November 2019",
+            description:
+              [
+                  "Developed a convolutional neural network model to recognize america sign language. The model is trained based on MNIST which has 27000+ training samples.",
+              "Pre-processed data with greyscale filter to eliminate skin color and background distraction.",
+              "Implemented baseline model utilizing support vector machine.",],
+            tag: ["Python", "PyTorch", "Image Recognition"],
+          },
+          {
+            id: 2,
+            img: "mapping",
+            project_name: "Mapping Application",
+            link: "#",
+            date: "January 2018 - April 2018",
+            description:
+             [ "A mapping software that generates graphical map and offers navigation functionality that targeting users' needs.",
+             "Implemented Dijkastra and greedy algorithm to solve tranveling salesman problem."],
+            tag: ["C++"],
+          },
+               {
+            id: 3,
+            img: "empty",
+            project_name: "FPGA Video Game",
+            link: "#",
+            date: "November 2017",
+            description:
+             [ "A typing video game that reads user input from PS/2 keyboard and compares inputted keycode to a sequence of stored keycodes displayed on VGA screen using Verilog",
+             "ICreated multiple-finite stage machines for reading user input, sequence comparison and level progression."],
+            tag: ["Verilog"],
+          },
+               {
+            id: 4,
+            img: "empty",
+            project_name: "Analog to Digital Converter",
+            link: "#",
+            date: "March 2018",
+            description:
+             [ "Used Assembly to build an analog to digital converter that converts sound wave from microphone to frequency domain by implementing Fast Fourier Transform",
+             "Animated waveform in time and frequency domain on VGA."],
+            tag: ["Assembly"],
           },
         ],
       },
@@ -142,24 +113,7 @@ export default {
   },
   methods: {
     initialization() {
-      document.createElement(
-        "img",
-        {
-          attrs: {
-            src: require("./../assets/evoting.png"), // this is now a module request
-            alt: "Riley",
-          },
-        }
-        //   var img_list = document.getElementsByClassName("card-img-top");
-        //   for (var i = 0; i < img_list.length; i++) {
-        //     // img_list[i].src = this.content.project_list[i].img;
-        //     console.log( img_list[i].src )
 
-        //   }
-      );
-    },
-    getImgUrl(pic) {
-      return require("../assets/" + pic);
     },
   },
   mounted() {
@@ -168,5 +122,12 @@ export default {
 };
 </script>
 <style scoped>
+img {
+  width: 100%;
+  max-width: 500px;
+}
+a{
+     color: rgb(153, 71, 39);
+}
 </style>
 
