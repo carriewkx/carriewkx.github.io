@@ -11,10 +11,10 @@
       <router-link class="nav-item nav-link" to="experience"
         >Experience 📎
       </router-link>
-      <router-link class="nav-item nav-link" to="">Projects 💾 </router-link>
-      <router-link class="nav-item nav-link" to="">Skills ⚒ </router-link>
-      <router-link class="nav-item nav-link" to="">Photography 📷 </router-link>
-      <router-link class="nav-item nav-link" to="">Blog 📝</router-link>
+      <router-link class="nav-item nav-link" to="projects">Projects 💾 </router-link>
+      <router-link class="nav-item nav-link" to="skills">Skills ⚒ </router-link>
+      <router-link class="nav-item nav-link" to="photography">Photography 📷 </router-link>
+      <router-link class="nav-item nav-link" to="blog">Blog 📝</router-link>
     </div>
   </nav>
 </template>

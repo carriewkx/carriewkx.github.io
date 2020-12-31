@@ -34,7 +34,7 @@
             class="text-link"
             href="https://www.imdb.com/title/tt0264464/"
             >Catch Me If You Can.</a
-          >" <br /><br />
+          >" <br />
         </p>
       </div>
     </div>
@@ -61,7 +61,7 @@
 
 <script>
 export default {
-  name: "Aboutme",
+  name: "aboutme",
 };
 </script>
 

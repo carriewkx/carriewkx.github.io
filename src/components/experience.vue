@@ -4,99 +4,24 @@
       <div class="row">
         <div class="col-md-7 offset-md-2">
           <ul class="timeline">
-            <li>
+            <li v-for="data in content.experience_list" v-bind:key="data.id">
               <a
                 class="org"
                 target="_blank"
                 href="https://www.facebook.com/humans.of.skule/"
-                >Humans of Skule 🎤</a
-              >
-              <p class="float-right date">Sept. 2020 - current</p>
-              <p class="position">Head of Photography</p>
+                >{{ data.org }}
+              </a>
+              <p class="float-right date">{{ data.date }}</p>
+              <p class="position">{{ data.position }}</p>
               <p class="description">
-                Responsible for interviewing candidates, organize photography
-                team meeting.
+                {{ data.description }}
               </p>
-              <span class="badge badge-light">Communication</span>
-              <span class="badge badge-light">Leadership</span>
-            </li>
-            <br />
-            <li>
-              <a
-                class="org"
-                target="_blank"
-                href="https://www.rbccm.com/en/expertise/electronic-trading.page"
-                >Royal Bank of Canada Capital Markets 🏦</a
+              <span
+                class="badge badge-light"
+                v-for="label in data.tag"
+                v-bind:key="label"
+                >{{ label }}</span
               >
-              <p class="float-right date">May 2019 - Sept. 2020</p>
-              <p class="position">Technical Systems Analyst Intern</p>
-              <p class="description">
-                Automated testing for platforms within electronic trading
-                stack.
-              </p>
-              <span class="badge badge-light">Java</span>
-              <span class="badge badge-light">Cucumber</span>
-              <span class="badge badge-light">Selenium</span>
-              <span class="badge badge-light">MongoDB</span>
-            </li>
-                 <br />
-            <li>
-              <a
-                class="org"
-                target="_blank"
-                href="https://www.autodrive.utoronto.ca/"
-                >aUToronto 🏎</a
-              >
-              <p class="float-right date">Sept. 2017 - April 2018</p>
-              <p class="position">Marketing Outreach Team Mmember</p>
-              <p class="description">
-              </p>
-              <span class="badge badge-light">Communication</span>
-            </li>
-            <br />
-            <li>
-              <a
-                class="org"
-                target="_blank"
-                href="https://www.svw-volkswagen.com/"
-                >SAIC Volkswagen 🚙</a
-              >
-              <p class="float-right date">July 2018 - Aug. 2018</p>
-              <p class="position">Electronic Purchasing Division Summer Intern</p>
-              <p class="description">
-                Translated automobile entertaining system and smart home technology contracts.
-              </p>
-              <span class="badge badge-light">Microsoft Office</span>
-            </li>
-            <br />
-            <li>
-              <a
-                class="org"
-                target="_blank"
-                href="http://reltoronto.ca/"
-                >Toronto Rehabilitation Engineering Laboratory 🚶</a
-              >
-              <p class="float-right date">May 2017 - Aug. 2017</p>
-              <p class="position">Summer Research Student</p>
-              <p class="description">
-                Analyzed and investigated dymanic balance data.
-              </p>
-              <span class="badge badge-light">Matlab</span>
-            </li>
-               <br />
-            <li>
-              <a
-                class="org"
-                target="_blank"
-                href="https://www.utat.ca/"
-                >UofT Aerospace Team 🛩</a
-              >
-              <p class="float-right date">Sept. 2016 - April 2017</p>
-              <p class="position">Unmanned Aerial Vehicle Avionic Team</p>
-              <p class="description">
-                Vehicle failsafe testing with Autopilot.
-              </p>
-              <span class="badge badge-light"></span>
             </li>
           </ul>
         </div>
@@ -108,6 +33,83 @@
 <script>
 export default {
   name: "experience",
+  data() {
+    return {
+      content: {
+        experience_list: [
+          {
+            id: 0,
+            org: "Humans of Skule 🎤",
+            link: "https://www.facebook.com/humans.of.skule/",
+            position: "Head of Photography",
+            date: "Sept. 2020 - current",
+            description:
+              "Responsible for interviewing candidates, organize photography team meeting.",
+            tag: ["Communication", "Leadership"],
+          },
+          {
+            id: 1,
+            org: "Royal Bank of Canada Capital Markets 🏦",
+            link: "https://www.rbccm.com/en/expertise/electronic-trading.page",
+            position: "Technical Systems Analyst Intern",
+            date: "May 2019 - Sept. 2020",
+            description:
+              "Automated testing for platforms within electronic trading stack.",
+            tag: ["Java", "Cucumber", "Selenium", "MongoDB"],
+          },
+
+          {
+            id: 2,
+            org: "SAIC Volkswagen 🚙",
+            link: "https://www.svw-volkswagen.com/",
+            position: "Electronic Purchasing Division Summer Intern",
+            date: "July 2018 - Aug. 2018",
+            description:
+              "Translated automobile entertaining system and smart home technology contracts.",
+            tag: ["Microsoft Office"],
+          },
+          {
+            id: 3,
+            org: "aUToronto 🏎",
+            link: "https://www.autodrive.utoronto.ca/",
+            position: "Marketing Outreach Team Mmember",
+            date: "Sept. 2017 - April 2018",
+            description: "",
+            tag: ["communication"],
+          },
+          {
+            id: 4,
+            org: "Toronto Rehabilitation Engineering Laboratory 🚶",
+            link: "http://reltoronto.ca/",
+            position: "Summer Research Student",
+            date: "May 2017 - Aug. 2017",
+            description: "Human posture data analysis.",
+            tag: ["Matlab"],
+          },
+          {
+            id: 5,
+            org: "UofT Aerospace Team 🛩",
+            link: "https://www.utat.ca/",
+            position: "Unmanned Aerial Vehicle Avionic Team Memeber",
+            date: "Sept. 2016 - April 2017",
+            description: "Vehicle failsafe testing with Autopilot.",
+            tag: [],
+          },
+        ],
+      },
+    };
+  },
+  methods: {
+    initialization() {
+      var org_list = document.getElementsByClassName("org");
+      for (var i = 0; i < org_list.length; i++) {
+        org_list[i].href = this.content.experience_list[i].link;
+      }
+    },
+  },
+  mounted() {
+    this.initialization();
+  },
 };
 </script>
 <style scoped>

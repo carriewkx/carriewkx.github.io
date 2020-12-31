@@ -12,6 +12,10 @@ Vue.use(VueRouter);
 
 import Aboutme from './components/aboutme.vue';
 import Experience from './components/experience.vue';
+import Skills from './components/skills.vue';
+import Photography from './components/photography.vue';
+import Blog from './components/blog.vue';
+import Projects from './components/projects.vue';
 
 
 const router = new VueRouter({
@@ -19,8 +23,12 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
 
   routes: [
-    { path: '/', name:'Aboutme',component: Aboutme },
-    { path: '/experience', name:'Experience',component: Experience },
+    { path: '/', name:'aboutme',component: Aboutme },
+    { path: '/experience', name:'experience',component: Experience },
+    { path: '/skills', name:'skills',component: Skills },
+    { path: '/photography', name:'photography',component: Photography },
+    { path: '/blog', name:'blog',component: Blog },
+    { path: '/projects', name:'projects',component: Projects },
   ]
 });
 
