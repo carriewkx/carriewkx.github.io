@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "skill": "C++",
+        "percentage": 50,
+        "level": "intermediate"
+    },
+    {
+        "id": 2,
+        "skill": "Python",
+        "percentage": 50,
+        "level": "intermediate"
+    },
+    {
+        "id": 3,
+        "skill": "C++",
+        "percentage": 50,
+        "level": "intermediate"
+    },
+    {
+        "id": 4,
+        "skill": "HTML/CSS",
+        "percentage": 25,
+        "level": "basic"
+    }
+]
