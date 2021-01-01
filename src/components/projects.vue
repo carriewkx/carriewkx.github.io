@@ -44,7 +44,7 @@
 
 <script>
 export default {
-  name: "experience",
+  name: "projects",
   data() {
     return {
       content: {
