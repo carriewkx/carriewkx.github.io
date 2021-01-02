@@ -19,6 +19,10 @@
     "file-loader": "^6.2.0",
     "jquery": "^3.5.1",
     "jsrsasign": "^10.1.4",
+    "node": "^15.4.0",
+    "postcss": "^8.2.2",
+    "sass": "^1.32.0",
+    "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
     "vue": "^2.6.11",
     "vue-analytics": "^5.22.1",
@@ -35,7 +39,9 @@
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-loader": "^15.9.6",
+    "vue-markdown-loader": "^2.4.1",
+    "vue-template-compiler": "^2.6.12"
   },
   "eslintConfig": {
     "root": true,

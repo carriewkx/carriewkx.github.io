@@ -1,28 +1,39 @@
 <template>
   <main class="px-3">
-    <div class="modal-body row">
-      <div class="col-md-6">
-        <h5 class="skill-type font-weight-light">Programming Languages</h5>
+    <div class="modal-body">
+      <!-- <div class="col-md-6"> -->
+      <h5 class="skill-type font-weight-light d-flex justify-content-center">
+        Programming Languages
+      </h5>
+
+      <!-- first column -->
+      <div v-for="data in content.prog_lan_list" v-bind:key="data.id">
         <br />
-        <!-- first column -->
-        <div v-for="data in content.prog_lan_list" v-bind:key="data.id">
-          <br />
-          <p class="skill font-weight-light">{{ data.skill }}</p>
+        <p class="skill font-weight-light d-flex justify-content-center">
+          {{ data.skill }}
+        </p>
+        <div class="d-flex justify-content-center">
           <div class="progress">
             <div class="progress-bar progress-bar-col-1" role="progressbar">
               {{ data.level }}
             </div>
           </div>
         </div>
-        <br />
       </div>
-      <div class="col-md-6">
-        <h5 class="skill-type font-weight-light">Others</h5>
+      <br />
+      <br />
+      <br />
+      <h5 class="skill-type font-weight-light d-flex justify-content-center">
+        Others
+      </h5>
+      <br />
+      <!-- second column -->
+      <div v-for="data in content.other_list" v-bind:key="data.id">
         <br />
-        <!-- second column -->
-        <div v-for="data in content.other_list" v-bind:key="data.id">
-          <br />
-          <p class="skill font-weight-light">{{ data.skill }}</p>
+        <p class="skill font-weight-light d-flex justify-content-center">
+          {{ data.skill }}
+        </p>
+        <div class="d-flex justify-content-center">
           <div class="progress">
             <div class="progress-bar progress-bar-col-2" role="progressbar">
               {{ data.level }}
@@ -30,6 +41,28 @@
           </div>
         </div>
       </div>
+      <br />
+      <!-- </div> -->
+      <!-- <div class="col-md-6">
+        <h5 class="skill-type font-weight-light d-flex justify-content-left">
+          Others
+        </h5>
+        <br />
+       
+        <div v-for="data in content.other_list" v-bind:key="data.id">
+          <br />
+          <p class="skill font-weight-light d-flex justify-content-left">
+            {{ data.skill }}
+          </p>
+          <div class="d-flex justify-content-left">
+            <div class="progress">
+              <div class="progress-bar progress-bar-col-2" role="progressbar">
+                {{ data.level }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
     </div>
   </main>
 </template>
@@ -77,7 +110,7 @@ export default {
             percentage: 25,
             level: "basic",
           },
-            {
+          {
             id: 6,
             skill: "Solidity",
             percentage: 25,
@@ -103,7 +136,7 @@ export default {
             percentage: 75,
             level: "intermediate",
           },
-              {
+          {
             id: 3,
             skill: "git",
             percentage: 75,
@@ -114,8 +147,8 @@ export default {
     };
   },
   methods: {
-     track () {
-      this.$ga.page('/')
+    track() {
+      this.$ga.page("/");
     },
     //     getSkillList() {
     //       var json = require("./../../public/skills.json"); //(with path)
@@ -147,7 +180,22 @@ export default {
 
 
 <style scoped>
-.progress-bar{
-    background-color:rosybrown
+.progress-bar {
+  background-color: rosybrown;
 }
+.progress{
+  width: 40%;
+}
+
+.skill{
+  color:rgb(119, 118, 118)
+}
+
+@media (max-width: 490px) {
+  .progress{
+  width: 70%;
+}
+
+}
+
 </style>

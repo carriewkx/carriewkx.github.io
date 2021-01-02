@@ -10,18 +10,30 @@ import VueAnalytics from 'vue-analytics';
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
-Vue.use(VueAnalytics, {
-  id: 'UA-186369277-1',
-  router
-});
 
 
 import Aboutme from './components/aboutme.vue';
 import Experience from './components/experience.vue';
 import Skills from './components/skills.vue';
 import Photography from './components/photography.vue';
-import Blog from './components/blog.vue';
+import Blog from './components/bloghome.vue';
 import Projects from './components/projects.vue';
+import BlogEntries from './assets/blog.json';
+
+const blogRoutes = Object.keys(BlogEntries).map(section => {
+  const children = BlogEntries[section].map(child => ({
+    path: child.id,
+    name: child.id,
+    component: () => import(`./assets/blog/${section}/${child.id}.md`)
+  }))
+  return {
+    path: `/`,
+    name: section,
+    component: () => import('./components/blogpage.vue'),
+    children
+  }
+})
+
 
 
 const router = new VueRouter({
@@ -29,14 +41,21 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
 
   routes: [
-    { path: '/', name:'aboutme',component: Aboutme },
-    { path: '/experience', name:'experience',component: Experience },
-    { path: '/skills', name:'skills',component: Skills },
-    { path: '/photography', name:'photography',component: Photography },
-    { path: '/blog', name:'blog',component: Blog },
-    { path: '/projects', name:'projects',component: Projects },
+    { path: '/', name: 'aboutme', component: Aboutme },
+    { path: '/experience', name: 'experience', component: Experience },
+    { path: '/skills', name: 'skills', component: Skills },
+    { path: '/photography', name: 'photography', component: Photography },
+    { path: '/blog', name: 'bloghome', component: Blog },
+    { path: '/projects', name: 'projects', component: Projects }, ...blogRoutes
   ]
 });
+Vue.use(VueAnalytics, {
+  id: 'UA-186369277-1',
+  router
+});
+
+
+
 
 
 new Vue({
