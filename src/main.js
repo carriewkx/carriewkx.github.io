@@ -6,9 +6,15 @@ import App from './App.vue'
 import VueRouter from 'vue-router';
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
+import VueAnalytics from 'vue-analytics';
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
+Vue.use(VueAnalytics, {
+  id: 'UA-186369277-1',
+  router
+});
+
 
 import Aboutme from './components/aboutme.vue';
 import Experience from './components/experience.vue';

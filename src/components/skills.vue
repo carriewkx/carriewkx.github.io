@@ -114,6 +114,9 @@ export default {
     };
   },
   methods: {
+     track () {
+      this.$ga.page('/')
+    },
     //     getSkillList() {
     //       var json = require("./../../public/skills.json"); //(with path)
     //       this.skillslist = json;

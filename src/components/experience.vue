@@ -126,7 +126,7 @@ ul.timeline {
 }
 ul.timeline:before {
   content: " ";
-  background: rgb(114, 68, 49);
+  background: rgb(153, 71, 39);
   display: inline-block;
   position: absolute;
   left: 29px;

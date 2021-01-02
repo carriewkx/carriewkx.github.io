@@ -129,5 +129,8 @@ img {
 a{
      color: rgb(153, 71, 39);
 }
+span {
+  color: rgb(90, 65, 48);
+}
 </style>
 
