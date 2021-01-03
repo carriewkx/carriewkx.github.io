@@ -5,7 +5,7 @@
         <div class="col-md-7 offset-md-2">
           <ul class="timeline">
             <li v-for="data in content.experience_list" v-bind:key="data.id">
-              <a class="org" target="_blank" href="data.link"
+              <a class="org" target="_blank"
                 >{{ data.org }}
               </a>
               <p class="float-right date">{{ data.date }}</p>
@@ -108,10 +108,10 @@ export default {
   },
   methods: {
     initialization() {
-      // var org_list = document.getElementsByClassName("org");
-      // for (var i = 0; i < org_list.length; i++) {
-      //   org_list[i].href = this.content.experience_list[i].link;
-      // }
+      var org_list = document.getElementsByClassName("org");
+      for (var i = 0; i < org_list.length; i++) {
+        org_list[i].href = this.content.experience_list[i].link;
+      }
     },
   },
   mounted() {

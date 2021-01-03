@@ -19,7 +19,7 @@
          
             <div class="card-body">
               <h4 class="card-title text-muted font-weight-light">
-                <a href="#">{{ data.project_name }}</a>
+                <a class="name">{{ data.project_name }}</a>
               </h4>
               <p class="date">{{ data.date }}</p>
               <p class="card-text" v-for="des in data.description"
@@ -87,9 +87,9 @@ export default {
           },
                {
             id: 3,
-            img: "empty",
+            img: "dontkill",
             project_name: "FPGA Video Game",
-            link: "#",
+            link: "https://github.com/carriewkx/dont_kill",
             date: "November 2017",
             description:
              [ "A typing video game that reads user input from PS/2 keyboard and compares inputted keycode to a sequence of stored keycodes displayed on VGA screen using Verilog",
@@ -98,9 +98,9 @@ export default {
           },
                {
             id: 4,
-            img: "empty",
+            img: "assembly",
             project_name: "Analog to Digital Converter",
-            link: "#",
+            link: "https://github.com/carriewkx/audio_wave_interpreter",
             date: "March 2018",
             description:
              [ "Used Assembly to build an analog to digital converter that converts sound wave from microphone to frequency domain by implementing Fast Fourier Transform",
@@ -112,9 +112,12 @@ export default {
     };
   },
   methods: {
-    initialization() {
-
-    },
+   initialization() {
+      var name_list = document.getElementsByClassName("name");
+      for (var i = 0; i < name_list.length; i++) {
+        name_list[i].href = this.content.project_list[i].link;
+      }
+   }
   },
   mounted() {
     this.initialization();

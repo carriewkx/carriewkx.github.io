@@ -1,4 +1,5 @@
-# Scientific Nature of Conventional and Pop Culture Astrology
+# Scientific Nature of Conventional and Pop Culture Astrology 🌌
+
 
 The study of astrology is scientific as it can be potentially falsified, and it is not pseudoscience. Nevertheless, the way that pop culture presents the idea of astrology has twisted the scientific nature of astrology, which leads to the consequence that astrology is not widely accepted as a science nowadays. In what follows, I will discuss the reason why astrology is scientific. I will also argue that astrology that is been presented by pop culture is not science and cannot represent the traditional study of astrology. 
 

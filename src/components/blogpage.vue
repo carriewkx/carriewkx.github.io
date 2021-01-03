@@ -29,6 +29,12 @@
       margin-bottom: 2rem;
       color: #754938;
     }
+      h2 {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      color: #754938;
+      font-weight: 400;
+    }
     h4 {
       margin-bottom: 3rem;
       color: #35495e;

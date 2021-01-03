@@ -1,10 +1,18 @@
 {
     "2021": [
-      {
-        "id": "astrology",
-        "date": "Jan. 2 2021",
-        "title": "Scientific Nature of Conventional and Pop Culture Astrology",
-        "description": "An essay I wrote in philosophy course about astrology."
-      }
+        {
+            "id": "astrology",
+            "date": "Jan. 2, 2021",
+            "title": "Scientific Nature of Conventional and Pop Culture Astrology 🌌",
+            "description": "An essay I wrote in philosophy course about astrology."
+        }
+    ],
+    "2020": [
+        {
+            "id": "2020books",
+            "date": "Dec. 30, 2020",
+            "title": "My 2020 Reading List 📚",
+            "description": "A summary of what I have read in 2020 (mainly 2020 summer)."
+        }
     ]
-  }
+}
