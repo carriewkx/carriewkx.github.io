@@ -1,6 +1,6 @@
 # My 2020 Reading List 📚
 
-Ever since university, I don't read much books. Mainly because school is always busy and there is always assignments due. Summer 2020 I was working from home because of Covid, I got more free time and even felt a bit bored at the end. So I started reading. Here are some interesting books I have read.
+Ever since university, I don't read much. Mainly because school was busy, and also being distracted by youtube and netflix (of course 😅)  Summer 2020 I was working from home due to Covid, I got more free time and even felt a bit bored at the end. So I started reading. Here are some interesting books I have read during 2020 summer lockdown.
 
 ---
 - ## Sapiens: A Brief History of Humankind
@@ -28,14 +28,15 @@ Ever since university, I don't read much books. Mainly because school is always 
 
   ### ⭐️⭐️⭐️
 
-  This book is useful for people who has zero knowledge in personal finance management. The financial concepts are pretty basic, it emphasizes a lot on interest compounding which I have already learned about. One thing I have learned from this book is finding a life coach/trainer. Having a trainer/coach would make life much easier.
+  This book is useful for people who has zero knowledge in personal finance management. The financial concepts are pretty basic, it emphasizes a lot on interest compounding which I have already knew about. 
+  <!-- One thing I have learned from this book is finding a life coach/trainer. Having a trainer/coach would make life much easier. -->
 ---
 - ## Flash Boys
   <img src="https://images-na.ssl-images-amazon.com/images/I/612hRHi+XHL.jpg" alt="drawing" style="width:200px;"/> 
 
   ### ⭐️⭐️⭐️⭐️⭐️
 
-  As an intern at RBC, I have heard about this book many times since it was based on story that happened in RBC. It is definately a great book for people who are interested in high frequency trading but don't know much about it. 
+  <!-- As an intern at RBC, I have heard about this book many times since it was based on story that happened in RBC. It is definately a great book for people who are interested in high frequency trading but don't know much about it.  -->
 ---
 
 

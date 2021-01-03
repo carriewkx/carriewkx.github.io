@@ -46,7 +46,7 @@ export default {
             position: "Head of Photography",
             date: "Sept. 2020 - current",
             description: [
-              "Responsible for interviewing candidates, organize photography team meeting.",
+              "Responsible for interviewing candidates, organizing photography team meeting.",
             ],
             tag: ["Communication", "Leadership"],
           },
