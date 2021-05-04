@@ -30,9 +30,9 @@
           🎞, reading books 📚 and watching movies 🎬. <br /><br />
           My current reading is "<a
             class="text-link"
-            href="https://www.gatesnotes.com/Books/Shoe-Dog"
+            href="https://www.goodreads.com/book/show/44525305-the-ride-of-a-lifetime"
           >
-            Shoe Dog </a
+            The Ride of A Lifetime </a
           >". My favorite movie is "<a
             class="text-link"
             href="https://www.imdb.com/title/tt0264464/"
