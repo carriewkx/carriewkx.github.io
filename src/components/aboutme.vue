@@ -15,28 +15,29 @@
       <br />
       <div class="container-fluid justify-content-center text-center">
         <p class="font-weight-light text-left auto">
-          University of Toronto 🇨🇦 computer engineering 💻 student, graduating
-          May 2021. (she/her/hers) <br /><br />
+          Graduated from University of Toronto 🇨🇦 Computer Engineering 👩🏻‍💻. <br /><br />
           I will be joining
           <a class="text-link" href="https://www.rbccm.com/en/"
             >RBC Capital Markets</a
           >
           🏦 new grad rotational program after graduation.
-          <br /><br />
-          In my free time, I enjoy
+          <br /><br/>
+          In my free time, I 
           <router-link  to="photography" style="color:rgb(153, 71, 39);">
-          taking pictures
+          take photos,
           </router-link>
-          🎞, reading books 📚 and watching movies 🎬. <br /><br />
+          🎞, read <a class="text-link" href="https://www.goodreads.com/review/list/168686416?shelf=%23ALL%23"
+            >books</a
+          > 📚, ski ⛷️ and play tennis 🎾. <br /><br />
           My current reading is "<a
             class="text-link"
             href="https://www.goodreads.com/book/show/44525305-the-ride-of-a-lifetime"
           >
             The Ride of A Lifetime </a
-          >". My favorite movie is "<a
+          >". My favorite TV show is "<a
             class="text-link"
-            href="https://www.imdb.com/title/tt0264464/"
-            >Catch Me If You Can.</a
+            href="https://www.hbo.com/succession"
+            >Succession.</a
           >" <br />
         </p>
       </div>
