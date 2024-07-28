@@ -130,10 +130,10 @@ img {
   max-width: 500px;
 }
 a{
-     color: rgb(153, 71, 39);
+     color: rgb(49,97,36);
 }
 span {
-  color: rgb(90, 65, 48);
+  color: rgb(40, 86, 51);
 }
 </style>
 

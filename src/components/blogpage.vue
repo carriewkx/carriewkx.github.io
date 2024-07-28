@@ -27,12 +27,12 @@
     h1 {
       font-size: 2rem;
       margin-bottom: 2rem;
-      color: #754938;
+      color: #467362;
     }
       h2 {
       font-size: 1.3rem;
       margin-bottom: 2rem;
-      color: #754938;
+      color: #32774c;
       font-weight: 400;
     }
     h4 {

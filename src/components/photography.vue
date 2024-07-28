@@ -47,7 +47,7 @@ img {
   max-width: 500px;
 }
 a {
-  color: rgb(153, 71, 39);
+  color: rgb(49,97,36);
 }
 </style>
 

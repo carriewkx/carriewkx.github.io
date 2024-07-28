@@ -8,11 +8,8 @@
       >
 
       <router-link class="nav-item nav-link" to="/">About Me 👩🏻 </router-link>
-      <router-link class="nav-item nav-link" to="experience"
-        >Experience 📎
-      </router-link>
+      <router-link class="nav-item nav-link" to="experience">Experience 📎</router-link>
       <router-link class="nav-item nav-link" to="projects">Projects 💾 </router-link>
-      <router-link class="nav-item nav-link" to="skills">Skills ⚒ </router-link>
       <router-link class="nav-item nav-link" to="photography">Photography 📷 </router-link>
       <router-link class="nav-item nav-link" to="blog">Blog 📝</router-link>
     </div>
@@ -36,10 +33,10 @@ a {
   color: black;
 }
 .navbar-nav .nav-item:hover {
-  color: rgb(153, 71, 39);
+  color: rgb(49,97,36);
 }
 
 .navbar-nav .nav-item:focus {
-  color: rgb(153, 71, 39);
+  color: rgb(49,97,36);
 }
 </style>

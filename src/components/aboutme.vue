@@ -5,7 +5,7 @@
       <br /> -->
       <br />
       <img
-        src="../assets/carrie-cropped.png"
+        src="../assets/carrie-cropped2.png"
         class="img-fluid w-50 p-3 float-lg-left float-xl-left"
         alt=""
       />
@@ -16,29 +16,30 @@
       <div class="container-fluid justify-content-center text-center">
         <p class="font-weight-light text-left auto">
           Graduated from University of Toronto 🇨🇦 Computer Engineering 👩🏻‍💻. <br /><br/>
-          I am currently working for my family business as a project manager.
-          My past experience includes
+          I am currently working as a project manager for a Chinese 🇨🇳 manufacturing firm. <br /><br/>
+          My past experience includes: <br /><br/>
+          Software Engineer at 
           <a class="text-link" href="https://www.rbccm.com/en/"
-            >RBC Capital Markets 🏦 </a
-          >
+            >RBC Capital Markets 🏦 </a> and Summer Research Student at <a class="text-link" href="https://www.masl.ca/members"
+            >Toronto Rehab Engineering Lab 🏃‍♀️. </a>
           <br /><br/>
           In my free time, I 
-          <router-link  to="photography" style="color:rgb(153, 71, 39);">
+          <router-link  to="photography" style="color:rgb(49,97,36);">
           take photos,
           </router-link>
           🎞, read <a class="text-link" href="https://www.goodreads.com/review/list/168686416?shelf=%23ALL%23"
             >books</a
-          > 📚, ski ⛷️ and play tennis 🎾. <br /><br />
+          > 📚, ski ⛷️, play tennis 🎾 and spend time with my cat 🐈. <br /><br />
           My current reading is "<a
             class="text-link"
             href="https://www.goodreads.com/book/show/44525305-the-ride-of-a-lifetime"
           >
-            The Ride of A Lifetime </a
+          The Ride of A Lifetime </a
           >". My favorite TV show is "<a
             class="text-link"
             href="https://www.hbo.com/succession"
-            >Succession.</a
-          >" <br />
+            >Succession</a
+          >". <br />
         </p>
       </div>
     </div>
@@ -88,11 +89,11 @@ span {
 }
 
 a.text-link {
-  color: rgb(153, 71, 39);
+  color: rgb(49,97,36);
 }
 
 a.icon-link {
-  color: rgb(153, 71, 39);
+  color: rgb(49,97,36);
   padding: 5%;
 }
 

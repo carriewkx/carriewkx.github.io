@@ -39,12 +39,24 @@ export default {
     return {
       content: {
         experience_list: [
+      {
+            id: 6,
+            org: "Royal Bank of Canada Capital Markets 🏦",
+            link: "https://www.rbccm.com/en/expertise/electronic-trading.page",
+            position: "Software Engineer",
+            date: "July 2021 - Aug. 2024",
+            description: [
+              "Global Trade Management Team - Post trade processing.",
+              "Canada Market Making Team - Build trading algorithm."
+            ],
+            tag: ["Java", "Streambase"],
+          },
           {
             id: 0,
             org: "Humans of Skule 🎤",
             link: "https://www.facebook.com/humans.of.skule/",
             position: "Head of Photography",
-            date: "Sept. 2020 - current",
+            date: "Sept. 2020 - April 2021",
             description: [
               "Responsible for interviewing candidates, organizing photography team meeting.",
             ],
@@ -126,7 +138,7 @@ ul.timeline {
 }
 ul.timeline:before {
   content: " ";
-  background: rgb(153, 71, 39);
+  background: rgb(49,97,36);
   display: inline-block;
   position: absolute;
   left: 29px;
@@ -144,7 +156,7 @@ ul.timeline > li:before {
   display: inline-block;
   position: absolute;
   border-radius: 50%;
-  border: 3px solid rgb(153, 71, 39);
+  border: 3px solid rgb(49,97,36);
   left: 20px;
   width: 20px;
   height: 20px;
@@ -160,7 +172,7 @@ ul.timeline > li:before {
   font-weight: 200;
 }
 .position {
-  color: rgb(153, 71, 39);
+  color: rgb(49,97,36);
   font-weight: 300;
 }
 .description {

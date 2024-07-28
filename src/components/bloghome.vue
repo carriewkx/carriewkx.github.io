@@ -46,7 +46,7 @@ h2 {
 }
 h3 {
   font-size: 1.3rem;
-  color: rgb(153, 71, 39);
+  color: rgb(49,97,36);
   margin-bottom: 0;
   cursor: pointer;
   font-weight: 300;
